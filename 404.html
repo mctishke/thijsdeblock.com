@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Niet gevonden — Thijs De Block</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>
+  // Adressen van de vorige site (tot 2026) wijzen naar hun plek op de nieuwe pagina.
+  (function () {
+    var p = location.pathname.replace(/\/+$/, "").toLowerCase();
+    var naar = {
+      "/about": "/#over",
+      "/contact": "/#contact",
+      "/commercial-work": "/#werk",
+      "/personal-projects": "/#meer"
+    }[p];
+    if (!naar && p.indexOf("/personal-projects/") === 0) naar = "/#meer";
+    if (naar) location.replace(naar);
+  })();
+</script>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #d4bb93;
+         color: #1c1712; font: 400 17px/1.6 Inter, system-ui, sans-serif; padding: 16px; text-align: center; }
+  h1 { font: italic 800 64px/0.9 "Barlow Condensed", sans-serif; text-transform: uppercase; margin: 0 0 16px; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<div>
+  <h1>Niet gevonden</h1>
+  <p>Deze pagina bestaat niet (meer). <a href="/">Naar thijsdeblock.com</a></p>
+</div>
+</body>
+</html>
