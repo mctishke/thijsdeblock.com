@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thijsdeblock.com/sitemap.xml
